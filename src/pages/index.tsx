@@ -1,5 +1,13 @@
 import React from "react";
+import { PageContent, PageLayout } from "~/components/layout/page";
+import { WelcomeSection } from "~/components/home";
 
 export default function LandingIndex() {
-  return <div>LandingIndex</div>;
+  return (
+    <PageLayout>
+      <PageContent>
+        <WelcomeSection />
+      </PageContent>
+    </PageLayout>
+  );
 }
