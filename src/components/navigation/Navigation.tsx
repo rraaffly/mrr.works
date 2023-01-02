@@ -16,7 +16,7 @@ const Navigation = () => {
         <Button
           className={clsx(
             "w-7 h-7 lg:hidden",
-            isOpen && "absolute z-50 right-6"
+            isOpen && "absolute z-50 right-6 top-3.5"
           )}
           onClick={handleClick}
         >

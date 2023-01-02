@@ -1,8 +1,8 @@
 import React from "react";
-import { PageContent, PageLayout } from "~/components/layout/page";
 import { WelcomeSection } from "~/components/home";
+import { PageContent, PageLayout } from "~/components/layout/page";
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <PageLayout>
       <PageContent>

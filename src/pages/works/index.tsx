@@ -1,13 +1,15 @@
 import React from "react";
 import { PageContent, PageLayout } from "~/components/layout/page";
-import { WelcomeSection } from "~/components/home";
+import { WorksSection } from "~/components/works";
 
-export default function HomePage() {
+const WorksPage = () => {
   return (
     <PageLayout>
       <PageContent>
-        <WelcomeSection />
+        <WorksSection />
       </PageContent>
     </PageLayout>
   );
-}
+};
+
+export default WorksPage;

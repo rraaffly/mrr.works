@@ -25,7 +25,10 @@ const NavigationMenu: React.FC<Props> = ({ data, open }) => {
     >
       {data.map((value, index) => (
         <li key={index}>
-          <Link path={value.path} className="text-lg lg:text-base font-bold">
+          <Link
+            path={value.path}
+            className="text-lg lg:text-base font-bold tracking-tight"
+          >
             {value.menu}
           </Link>
         </li>

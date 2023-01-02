@@ -1,22 +1,22 @@
 export const dataNavigationMenu = [
   {
     menu: "home",
-    path: "#",
+    path: "/",
   },
   {
     menu: "about",
-    path: "#",
+    path: "/about",
   },
   {
     menu: "works",
-    path: "#",
+    path: "/works",
   },
   {
     menu: "posts",
-    path: "#",
+    path: "/posts",
   },
   {
-    menu: "etc.",
-    path: "#",
+    menu: "etc",
+    path: "/etc",
   },
 ];
