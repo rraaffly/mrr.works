@@ -5,19 +5,19 @@ import NavigationList from "./NavigationList";
 const data = [
   {
     menu: "Home",
-    path: "#",
+    path: "/",
   },
   {
     menu: "About",
-    path: "#",
+    path: "/about",
   },
   {
     menu: "Works",
-    path: "#",
+    path: "/works",
   },
   {
     menu: "Blog",
-    path: "#",
+    path: "/blog",
   },
 ];
 

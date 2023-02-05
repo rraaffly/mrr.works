@@ -27,7 +27,10 @@ const MainLayout = ({ children, className, ...props }) => {
           siteName: meta.WEBSITE_NAME,
         }}
       />
-      <div className={clsx("relative", className)} {...props}>
+      <div
+        className={clsx("relative flex flex-col flex-1", className)}
+        {...props}
+      >
         <MainHeader />
         {children}
       </div>

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import { List, X } from "phosphor-react";
-import Navigation from "./navigation/Navigation";
-import { Container, Link } from "~/components/ui";
 import clsx from "clsx";
+import Navigation from "./navigation/Navigation";
+import { List, X } from "phosphor-react";
+import { Container, Link } from "~/components/ui";
 
 const MainHeader = () => {
   const [isOpen, setOpen] = useState(false);
   const openNavigation = () => setOpen(!isOpen);
   return (
-    <header className="fixed top-0 left-0 z-10 w-full">
+    <header className="fixed top-0 left-0 z-10 w-full h-fit">
       <Container className="py-3 flex flex-col md:flex-row">
         <div className="flex items-center justify-between">
           <div className="w-full h-7">
