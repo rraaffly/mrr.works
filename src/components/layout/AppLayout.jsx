@@ -4,7 +4,7 @@ const AppLayout = ({ children }) => {
   return (
     <main
       id="app"
-      className="flex flex-col w-full min-h-screen max-h-screen antialiased font-normal font-sans text-base"
+      className="flex flex-col w-full min-h-screen antialiased font-normal font-sans text-base"
     >
       {children}
     </main>
