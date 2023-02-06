@@ -4,20 +4,24 @@ import NavigationList from "./NavigationList";
 
 const data = [
   {
-    menu: "Home",
+    menu: "home.",
     path: "/",
   },
   {
-    menu: "About",
+    menu: "about.",
     path: "/about",
   },
   {
-    menu: "Works",
+    menu: "works.",
     path: "/works",
   },
   {
-    menu: "Blog",
+    menu: "blog.",
     path: "/blog",
+  },
+  {
+    menu: "misc.",
+    path: "/miscellaneous",
   },
 ];
 
