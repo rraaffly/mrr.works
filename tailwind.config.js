@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         sans: ["Plus Jakarta Sans", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        limo: "#ADE792",
+      },
     },
   },
   plugins: [],

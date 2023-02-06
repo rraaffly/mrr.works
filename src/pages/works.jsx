@@ -1,12 +1,12 @@
 import React from "react";
-import { HomeSection } from "~/components/home";
 import { MainContent, MainLayout } from "~/components/layout";
+import { WorksSection } from "~/components/works";
 
-export default function HomePage() {
+export default function WorksPage() {
   return (
     <MainLayout>
       <MainContent>
-        <HomeSection />
+        <WorksSection />
       </MainContent>
     </MainLayout>
   );

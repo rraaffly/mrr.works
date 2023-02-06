@@ -1,12 +1,12 @@
 import "~/styles/globals.css";
 
 import React from "react";
-import { Layout } from "~/components/layout";
+import { AppLayout } from "~/components/layout";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
+    <AppLayout>
       <Component {...pageProps} />
-    </Layout>
+    </AppLayout>
   );
 }
