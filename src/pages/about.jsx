@@ -1,23 +1,12 @@
 import React from "react";
+import { AboutSection } from "~/components/about";
 import { MainContent, MainLayout } from "~/components/layout";
-import { Container } from "~/components/ui";
-import SectionTitle from "~/components/ui/SectionTitle";
 
-export default function About() {
+export default function AboutPage() {
   return (
     <MainLayout>
       <MainContent>
-        <section id="about">
-          <SectionTitle>ASd</SectionTitle>
-          <Container>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              quibusdam aspernatur rem alias dolor impedit cupiditate possimus
-              nihil sapiente, totam, soluta labore distinctio velit incidunt
-              rerum nesciunt perspiciatis veniam corporis!
-            </p>
-          </Container>
-        </section>
+        <AboutSection />
       </MainContent>
     </MainLayout>
   );
