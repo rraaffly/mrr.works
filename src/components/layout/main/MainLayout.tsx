@@ -1,8 +1,8 @@
 import React from "react";
 import { DefaultSeo } from "next-seo";
-import seoConfig from "~/config/website.config.json";
 import MainFooter from "./MainFooter";
 import MainHeader from "./MainHeader";
+import seoConfig from "~/config/website.config.json";
 
 const metaConfig = {
   metaSiteName: seoConfig.name,
