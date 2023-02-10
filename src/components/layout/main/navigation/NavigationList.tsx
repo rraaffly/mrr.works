@@ -8,10 +8,13 @@ interface NavigationListProps {
 
 const NavigationList = ({ data }: NavigationListProps) => {
   return (
-    <ul className="flex flex-col lg:flex-row gap-x-2">
+    <ul className="flex flex-col lg:flex-row gap-x-2 text-center">
       {data.map((value, index) => (
         <li key={index} className="px-2 py-1.5">
-          <Link href={value.path} className="font-semibold tracking-tighter">
+          <Link
+            href={value.path}
+            className="text-xl sm:text-2xl lg:text-base font-semibold tracking-tight"
+          >
             {value.name}
           </Link>
         </li>
