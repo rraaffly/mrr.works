@@ -1,8 +1,12 @@
+import clsx from "clsx";
 import React from "react";
 
-const MainContent = (props: { children?: React.ReactNode }) => {
+const MainContent = (props: {
+  children?: React.ReactNode;
+  className?: string;
+}) => {
   return (
-    <main id="main" className="flex flex-col flex-1">
+    <main id="main" className={clsx("flex flex-col flex-1", props.className)}>
       {props.children}
     </main>
   );
