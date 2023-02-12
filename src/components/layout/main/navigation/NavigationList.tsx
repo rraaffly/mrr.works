@@ -13,7 +13,7 @@ const NavigationList = ({ data }: NavigationListProps) => {
         <li key={index} className="px-2 py-1.5">
           <Link
             href={value.path}
-            className="text-xl sm:text-2xl lg:text-base font-semibold tracking-tight"
+            className="text-3xl lg:text-base font-bold tracking-tighter"
           >
             {value.name}
           </Link>

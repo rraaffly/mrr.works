@@ -29,7 +29,7 @@ const Navigation = () => {
         className={clsx(
           "absolute top-0 z-40 w-full flex items-center justify-center transition-all duration-300 lg:static lg:h-fit lg:justify-end",
           {
-            "left-0 h-screen bg-white/30 backdrop-blur-md": isOpen,
+            "left-0 h-screen bg-white/80 backdrop-blur-md": isOpen,
             "left-full h-screen": !isOpen,
           }
         )}
