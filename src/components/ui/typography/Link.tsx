@@ -7,6 +7,7 @@ interface CustomLinkProps
   children: React.ReactNode;
   className?: string;
   styled?: boolean;
+  newTab?: boolean;
 }
 
 const Link = ({
@@ -14,11 +15,19 @@ const Link = ({
   className,
   href = "#",
   styled,
+  newTab,
   ...props
 }: CustomLinkProps) => {
-  const isStyled = styled && "hover:underline hover:decoration-dotted";
+  const isStyled =
+    styled &&
+    "hover:underline hover:decoration-dotted hover:underline-offset-2";
   return (
-    <NextLink href={href} className={clsx(isStyled, className)} {...props}>
+    <NextLink
+      href={href}
+      className={clsx(isStyled, className)}
+      target={newTab && "_blank"}
+      {...props}
+    >
       {children}
     </NextLink>
   );
