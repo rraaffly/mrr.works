@@ -13,7 +13,7 @@ export default function HomePage() {
             <Heading as="h1" bold className="tracking-tight uppercase text-lg">
               Muhammad Rafly Rafsanjani
             </Heading>
-            <Heading as="h4">Software Developer</Heading>
+            <Heading as="h4">Software Engineer</Heading>
             <Text as="span" className="block mt-10 text-lg">
               🚀 Exploring opportunities and side projects.
             </Text>

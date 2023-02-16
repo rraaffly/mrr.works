@@ -4,15 +4,15 @@ import { Link, Text } from "../ui";
 const ShowcaseCard = () => {
   return (
     <div className="flex flex-col lg:flex-row rounded-md border border-gray-200">
-      <div className="w-full lg:w-52 h-40">
+      <div className="w-full h-full lg:w-52 h-40">
         <img src="/image.jpg" className="w-full h-full object-cover" alt="" />
       </div>
 
       <div className="w-full py-4 px-8">
-        <Link href="/" className="font-bold text-lg" styled>
+        <Link href="/" className="mb-2 block font-bold text-lg" styled>
           Dynamic broadcast overlays with Google Sheets and Web Technologies
         </Link>
-        <Text as="p" className="text-base tracking-tight">
+        <Text as="p" className="text-sm tracking-tight">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi
           perferendis ex similique, ut porro quis qui pariatur dolorum laborum
           autem architecto et veniam aliquid, eaque debitis quia dolor

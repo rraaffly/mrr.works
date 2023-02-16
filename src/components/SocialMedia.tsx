@@ -10,7 +10,8 @@ const SocialMedia = () => {
         <Link
           href="https://www.instagram.com/rraaffly"
           className="text-xl lg:text-lg hover:text-pink-700"
-          newTab
+          aria-label="Instagram"
+          target="_blank"
         >
           <IoLogoInstagram />
         </Link>
@@ -19,7 +20,8 @@ const SocialMedia = () => {
         <Link
           href="https://www.instagram.com/rraaffly"
           className="text-xl lg:text-lg hover:text-yellow-600"
-          newTab
+          aria-label="Notion"
+          target="_blank"
         >
           <RxNotionLogo />
         </Link>
@@ -28,7 +30,8 @@ const SocialMedia = () => {
         <Link
           href="https://www.linkedin.com/in/raaafly/"
           className="text-xl lg:text-lg hover:text-blue-800"
-          newTab
+          aria-label="LinkedIn"
+          target="_blank"
         >
           <IoLogoLinkedin />
         </Link>
@@ -37,7 +40,8 @@ const SocialMedia = () => {
         <Link
           href="https://github.com/raaafly"
           className="text-xl lg:text-lg hover:text-gray-700"
-          newTab
+          aria-label="Github"
+          target="_blank"
         >
           <IoLogoGithub />
         </Link>

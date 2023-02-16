@@ -1,6 +1,5 @@
 import React from "react";
 import { MainContent, MainLayout } from "~/components/layout";
-import PostCard from "~/components/posts/PostCard";
 import { Container, Heading, Text } from "~/components/ui";
 
 export default function PostsDetailPage() {
@@ -9,7 +8,11 @@ export default function PostsDetailPage() {
       <MainContent>
         <section id="home" className="py-20">
           <Container>
-            <Heading as="h2" bold className="mb-4 tracking-tight">
+            <Heading
+              bold
+              as="h3"
+              className="px-0 mb-4 text-center tracking-tight lg:px-8"
+            >
               Dynamic broadcast overlays with Google Sheets and Web Technologies
             </Heading>
             <Text as="p" className="mb-10 text-justify">

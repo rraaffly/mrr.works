@@ -6,30 +6,28 @@ interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   bold?: boolean;
 }
 
-const Heading = ({
-  children,
-  className,
-  as: HeadingElement = "h6",
-  bold,
-  ...props
-}: HeadingProps) => {
-  const isBold = bold && "font-bold";
-  const isSize = {
-    h1: "text-5xl",
-    h2: "text-4xl",
-    h3: "text-3xl",
-    h4: "text-2xl",
-    h5: "text-xl",
-    h6: "text-lg",
-  };
-  return (
-    <HeadingElement
-      className={clsx(isSize[HeadingElement], isBold, className)}
-      {...props}
-    >
-      {children}
-    </HeadingElement>
-  );
-};
+const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
+  ({ children, className, as: HeadingElement = "h3", bold, ...props }, ref) => {
+    const isBold = bold && "font-bold";
+    const isSize = {
+      h1: "text-5xl",
+      h2: "text-4xl",
+      h3: "text-3xl",
+      h4: "text-2xl",
+      h5: "text-xl",
+      h6: "text-lg",
+    };
+    return (
+      <HeadingElement
+        className={clsx(isSize[HeadingElement], isBold, className)}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </HeadingElement>
+    );
+  }
+);
 
+Heading.displayName = "Heading";
 export default Heading;
