@@ -10,13 +10,13 @@ interface TextProps extends React.HTMLAttributes<HTMLElement> {
 const Text = ({
   children,
   className,
-  as: HeadingElement = "span",
+  as: TextElement = "span",
   ...props
 }: TextProps) => {
   return (
-    <HeadingElement className={clsx("", className)} {...props}>
+    <TextElement className={clsx("text-base", className)} {...props}>
       {children}
-    </HeadingElement>
+    </TextElement>
   );
 };
 
