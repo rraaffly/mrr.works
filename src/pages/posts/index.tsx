@@ -2,7 +2,6 @@ import React from "react";
 import { MainContent, MainLayout } from "~/components/layout";
 import PostCard from "~/components/posts/PostCard";
 import { Container, Heading, Text } from "~/components/ui";
-import { ButtonVariantStyle } from "~/components/ui/button/styles";
 
 export default function PostsPage() {
   return (
@@ -21,7 +20,6 @@ export default function PostsPage() {
             </Text>
 
             <div className="grid lg:grid-cols-3 gap-4">
-              <PostCard />
               <PostCard />
               <PostCard />
               <PostCard />
