@@ -15,6 +15,7 @@ const Navigation = () => {
           <Link href="/">Logo</Link>
         </div>
         <button
+          type="button"
           onClick={handleClick}
           className={clsx(
             "lg:hidden inline-flex items-center justify-center w-7 h-7",
