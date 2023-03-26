@@ -2,12 +2,12 @@ import React from "react";
 
 const AppLayout = (props: { children: React.ReactNode }) => {
   return (
-    <div
-      id="root"
-      className="relative flex flex-col w-full min-h-screen font-normal text-base"
+    <main
+      id="app"
+      className="flex flex-col w-full min-h-screen antialiased bg-background text-white"
     >
       {props.children}
-    </div>
+    </main>
   );
 };
 
