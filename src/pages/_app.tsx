@@ -4,17 +4,17 @@ import "nprogress/nprogress.css";
 import React, { useEffect } from "react";
 import type { AppProps } from "next/app";
 import { AppLayout } from "~/components/layout";
-import { progressBar } from "~/libs/progressBar";
+import { loadingBar } from "~/libs/loadingBar";
 
 export default function App({ Component, pageProps, router }: AppProps) {
   useEffect(() => {
     const handleStart = (_: string, { shallow }: { shallow: boolean }) => {
       if (!shallow) {
-        progressBar.start();
+        loadingBar.start();
       }
     };
     const handleStop = () => {
-      progressBar.done();
+      loadingBar.done();
     };
 
     router.events.on("routeChangeStart", handleStart);
@@ -27,6 +27,7 @@ export default function App({ Component, pageProps, router }: AppProps) {
       router.events.off("routeChangeError", handleStop);
     };
   }, [router]);
+
   return (
     <AppLayout>
       <Component {...pageProps} />
