@@ -3,15 +3,19 @@ import clsx from "clsx";
 
 type ContainerProps = React.HTMLAttributes<HTMLDivElement>;
 
-const Container = ({ children, className, ...props }: ContainerProps) => {
-  return (
-    <div
-      className={clsx("mx-auto w-full px-6 lg:w-10/12 lg:px-8", className)}
-      {...props}
-    >
-      {children}
-    </div>
-  );
-};
+const Container = React.forwardRef<HTMLDivElement, ContainerProps>(
+  ({ children, className, ...props }, ref) => {
+    return (
+      <div
+        className={clsx("mx-auto w-full lg:w-9/12 px-6", className)}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </div>
+    );
+  }
+);
 
+Container.displayName = "Container";
 export default Container;
