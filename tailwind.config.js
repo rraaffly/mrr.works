@@ -10,6 +10,7 @@ module.exports = {
       },
       colors: {
         limo: "#ADE792",
+        background: "#151515",
       },
     },
   },
